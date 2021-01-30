@@ -13,12 +13,11 @@
 </script>
 
 <div class="App">
-  <Markdown />
   <header class="App-header">
     <img src="/logo.svg" class="App-logo" alt="logo" />
     <p>Page has been open for <code>{count}</code> seconds.</p>
     <a
-      class="App-link font-red-500"
+      class="App-link text-green-400	"
       href="https://svelte.dev"
       target="_blank"
       rel="noopener noreferrer"
@@ -27,8 +26,13 @@
     </a>
   </header>
 </div>
+<Markdown />
 
-<style>
+<style global lang="postcss">
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
   .App-header {
     background-color: #f9f6f6;
     color: #333;
