@@ -1,6 +1,7 @@
 <!-- App.svelte -->
 <script>
   import { onMount } from 'svelte';
+  import Markdown from './Markdown.svelte';
   import './tailwind.css';
   let count = 0;
   onMount(() => {
@@ -12,11 +13,12 @@
 </script>
 
 <div class="App">
+  <Markdown />
   <header class="App-header">
     <img src="/logo.svg" class="App-logo" alt="logo" />
     <p>Page has been open for <code>{count}</code> seconds.</p>
     <a
-      class="App-link"
+      class="App-link font-red-500"
       href="https://svelte.dev"
       target="_blank"
       rel="noopener noreferrer"

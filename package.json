@@ -1,11 +1,11 @@
 {
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+    "build": "snowpack build"
   },
   "devDependencies": {
     "@snowpack/plugin-svelte": "^3.5.2",
+    "marked": "^1.2.8",
     "snowpack": "^3.0.1"
   },
   "dependencies": {
